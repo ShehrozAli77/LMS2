@@ -29,7 +29,7 @@ services:
       - ./app:/app
       - app/node_modules
     depends_on:
-      - mysqldb
+      mysqldb:
       condition: service_healthy
     restart: on-failure
     stdin_open: true
