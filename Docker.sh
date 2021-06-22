@@ -1,6 +1,4 @@
 #!/bin/bash
-git clone https://github.com/ShehrozAli77/LMS2.git
-cd LMS2/
 docker build -t node-mysql-app .
 (docker-compose up)
 sleep 10
