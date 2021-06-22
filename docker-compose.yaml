@@ -29,7 +29,7 @@ services:
     depends_on:
       - mysqldb
     restart: on-failure
-    command: sh -c 'bin/wait-for db:3306 -- npm start'
+    entrypoint: ./wait-for-it.sh mydb:3306 -- npm start
     stdin_open: true
     tty: true
 volumes: 
