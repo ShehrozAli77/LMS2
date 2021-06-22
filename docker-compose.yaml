@@ -32,7 +32,6 @@ services:
     command: ["./wait-for-it.sh", "mysqldb:3306", "--", "npm", "start"]
     stdin_open: true
     tty: true
-
 volumes: 
   db-config:
   db-data:
