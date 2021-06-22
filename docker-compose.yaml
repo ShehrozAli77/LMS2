@@ -28,7 +28,6 @@ services:
       - app/node_modules
     depends_on:
       - mysqldb
-    command: sh -c './wait-for db:3306 -- npm start'
     stdin_open: true
     tty: true
 
