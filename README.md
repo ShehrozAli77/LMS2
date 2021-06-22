@@ -1,6 +1,6 @@
 # Docker-NodeJS-MySQL
 
-Dokerized NodeJS app with MySQL Database
+Dokerized library NodeJS app with MySQL Database
 
 <h2>How to run</h2>
 <ol>
