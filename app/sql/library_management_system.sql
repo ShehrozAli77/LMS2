@@ -8,7 +8,6 @@
 -- PHP Version: 7.0.8
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET time_zone = "+00:00";
 
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -73,9 +72,9 @@ CREATE TABLE `books_request` (
 --
 
 INSERT INTO `books_request` (`request_id`, `user_id`, `genre`, `title`, `author`, `edition`, `isbn`, `date`) VALUES
-(1, 2, 'Mystery', 'Murder on the Orient Express', 'Agatha Christie', 3, '12gf3gj1jhr3jklj1ugjkb', '2018-07-10'),
-(2, 5, 'Mystery', 'The Mysterious Affair at Styles', 'Agatha Christie', 3, '4zgdhdv2dfh81v31sdgj', '2018-07-10'),
-(3, 4, 'Mystery', 'The Mysterious Affair at Styles', 'Agatha Christie', 3, '4zgdhdv2dfh81v31sdgj', '2018-07-10');
+(1, 2, 'Mystery', 'Murder on the Orient Express', 'Usman', 3, '12gf3gj1jhr3jklj1ugjkb', '2018-07-10'),
+(2, 5, 'Mystery', 'The Mysterious Affair at Styles', 'Ahmed', 3, '4zgdhdv2dfh81v31sdgj', '2018-07-10'),
+(3, 4, 'Mystery', 'The Mysterious Affair at Styles', 'Anjum', 3, '4zgdhdv2dfh81v31sdgj', '2018-07-10');
 
 -- --------------------------------------------------------
 
@@ -140,13 +139,13 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`user_id`, `name`, `phone`, `email`, `is_admin`, `password`, `address`, `gender`) VALUES
-(1, 'Abrar', '01711568524', 'a.zshahriar@gmail.com', 1, '1234', 'Mirpur DOHS', 'Male'),
-(2, 'Arefin', '01764431859', 'arefin@gmail.com', 0, 'yellow', 'Mirpur 13', 'Male'),
-(4, 'Rafin', '01924184941', 'rafin.ryan.07@outlook.com', 0, 'horse', 'Mirpur 13, Dhaka', 'Male'),
-(5, 'Shimi', '01723645289', 'shimi@gmail.com', 0, 'abcd', 'Uttara, Sector 13', 'Female'),
-(6, 'Jhuma', '01782963175', 'fjhuma@gmail.com', 0, 'qwerty', 'Banani, Chairman Bari', 'Female'),
-(7, 'Istiak', '01932478293', 'istiakisha69@gmail.com', 0, 'istiak', 'Baily Road', 'Male'),
-(8, 'Fahim Ahmed', '01726972364', 'fahim152@gmail.com', 0, 'fahimma', 'Kallayanpur', 'Male');
+(1, 'Shehroz', '03364800171', 'shehroz@gmail.com', 1, '1234', 'Lahore', 'Male'),
+(2, 'Usman', '03364850171', 'Usman@gmail.com', 0, 'yellow', 'karrachi', 'Male'),
+(4, 'Omer', '03364806171', 'Omer@outlook.com', 0, 'horse', 'Lahore Cantt', 'Male'),
+(5, 'Iqra', '03364807171', 'Iqra@gmail.com', 0, 'abcd', 'Fast Lahore', 'Female'),
+(6, 'Taha', '03364808171', 'Taha@gmail.com', 0, 'qwerty', 'UCP', 'Female'),
+(7, 'Awais', '03364890171', 'Awais@gmail.com', 0, 'tuning', 'Sadar', 'Male'),
+(8, 'Fahim', '03364100171', 'fahim152@gmail.com', 0, 'fahimma', 'railway', 'Male');
 
 --
 -- Indexes for dumped tables
