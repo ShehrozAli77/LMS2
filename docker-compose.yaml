@@ -15,8 +15,6 @@ services:
       - db-config:/etc/mysql
       - db-data:/var/lib/mysql
       - ./app/sql:/docker-entrypoint-initdb.d/:ro
-    healthcheck:
-      test: mysqladmin ping -h 127.0.0.1 -u $$MYSQL_USER --password=$$MYSQL_PASSWORD  
   app:
     build:
       context: .
@@ -29,9 +27,9 @@ services:
       - ./app:/app
       - app/node_modules
     depends_on:
-      mysqldb:
-      condition: service_healthy
+      - mysqldb
     restart: on-failure
+    command: ["./wait-for-it.sh", "mysqldb:3306", "--", "npm", "start"]
     stdin_open: true
     tty: true
 
