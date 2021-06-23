@@ -16,6 +16,6 @@ sudo install minikube-linux-amd64 /usr/local/bin/minikube
 sudo groupadd docker
 sudo usermod -aG docker $USER
 # sudo reboot
-
+minikube start
 mv .env-example .env
 sudo docker-compose up

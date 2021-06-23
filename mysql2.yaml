@@ -28,25 +28,19 @@ spec:
         app: mysql
     spec:
       containers:
-        - image: mysql
-          command: ["mysql --sql_mode="" --innodb-flush-log-at-trx-commit=0"]
+        - image: mysql:5.6
           name: mysql
           env:
             # Use secret in real usage
             - name: MYSQL_ROOT_PASSWORD
               value: password
-              name: MYSQL_DATABASE
-              value: library
           ports:
             - containerPort: 3306
               name: mysql
           volumeMounts:
             - name: mysql-persistent-storage
               mountPath: /var/lib/mysql
-              name: mysql-initdb
-              mountPath: /docker-entrypoint-initdb.d
       volumes:
         - name: mysql-persistent-storage
           persistentVolumeClaim:
             claimName: mysql-pv-claim
-            
