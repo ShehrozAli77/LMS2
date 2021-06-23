@@ -27,6 +27,9 @@ metadata:
 spec:
   selector:
     app: node
+  type: NodePort # remove if using ClusterIp
   ports:
-    - port: 80 # expose the service on internal port 80
-      targetPort: 3000 # our NodeJS app listens on port 3000
+    - port: 3000
+      targetPort: 3000
+      nodePort: 32100
+  # clusterIp: none # uncomment if using ClusterIp
