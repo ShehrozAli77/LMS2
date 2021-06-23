@@ -29,7 +29,6 @@ spec:
     spec:
       containers:
         - image: mysql
-          command: ["mysql --sql_mode="" --innodb-flush-log-at-trx-commit=0"]
           name: mysql
           env:
             # Use secret in real usage
