@@ -4,7 +4,7 @@ services:
   mysqldb:
     image: mysql
     restart: on-failure
-    env_file: ./.env
+    env_file: ./.env-example
     environment:
       MYSQL_ROOT_PASSWORD: $MYSQL_ROOT_PASSWORD
       MYSQL_DATABASE: $MYSQL_DATABASE
@@ -20,7 +20,7 @@ services:
       context: .
       dockerfile: ./app/Dockerfile
     image: node-mysql-app
-    env_file: ./.env
+    env_file: ./.env-example
     ports:
       - $NODE_LOCAL_PORT:$NODE_DOCKER_PORT
     volumes: 
