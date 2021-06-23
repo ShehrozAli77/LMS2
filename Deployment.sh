@@ -17,5 +17,4 @@ sudo groupadd docker
 sudo usermod -aG docker $USER
 # sudo reboot
 
-mv .env-example .env
 sudo docker-compose up
