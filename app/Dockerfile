@@ -8,10 +8,10 @@ RUN npm install
 
 COPY /app .
 
-COPY /app/wait-for-it.sh .
-COPY /app/wait-for-it.sh /app
+#COPY /app/wait-for-it.sh .
+#COPY /app/wait-for-it.sh /app
 
-RUN ["chmod +x" ,"./wait-for-it.sh"]
+#RUN ["chmod +x" ,"./wait-for-it.sh"]
 
 EXPOSE 3000
 

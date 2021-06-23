@@ -29,7 +29,7 @@ services:
     depends_on:
       - mysqldb
     restart: on-failure
-    command : ["sh", "./wait-for-it.sh", "-t", "40", "mysqldb:3306", "--", "npm", "start"]
+    # command : ["sh", "./wait-for-it.sh", "-t", "40", "mysqldb:3306", "--", "npm", "start"]
     stdin_open: true
     tty: true
 volumes: 
