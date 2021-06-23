@@ -1,4 +1,5 @@
 #!/bin/bash
+minikube start
 kubectl create -f PersistentVolume.yaml
 kubectl create -f storage.yaml
 kubectl apply -f mysql2.yaml

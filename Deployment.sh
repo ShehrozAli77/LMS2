@@ -15,7 +15,4 @@ curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-
 sudo install minikube-linux-amd64 /usr/local/bin/minikube
 sudo groupadd docker
 sudo usermod -aG docker $USER
-# sudo reboot
-minikube start
-mv .env-example .env
-sudo docker-compose up
+sudo reboot
