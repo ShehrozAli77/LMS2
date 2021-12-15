@@ -1,14 +1,3 @@
-# Docker-NodeJS-MySQL
-
-Dokerized library NodeJS app with MySQL Database
-
-<h2>How to run</h2>
-<ol>
-	<li>Clone this repository</li>
-	<li>
-		Run this command <code>docker-compose up</code>
-	</li>
-	<li>
-		Access <code>localhost:3000</code> in your browser and empty json will be shown
-	</li>
-</ol>
+# This a NodeJS Based Library Management System With Mysql with Kubernetes support for depolyment.
+# For Deployment Docker Swam can also be used.
+# AWS EC2 was used for deployemt using KubeCTL (Kubernates) 
